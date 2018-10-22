@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-	if (request.instruction === 'requestPermissions') {
-		console.log('Requesting <all_urls> permissions');
+	if (request.instruction === 'requestPermission') {
+		console.log('Requesting <all_urls> permission');
 		chrome.permissions.request(
 			{
 				origins: ['<all_urls>'],

@@ -13,7 +13,7 @@ function createElements() {
 	container.style.visibility = 'hidden';
 	const button = document.createElement('button');
 	button.id = 'eaf-button';
-	button.textContent = 'Ask for permission';
+	button.textContent = 'Request <all_url> Permission';
 	container.appendChild(button);
 
 	const styleNode = document.createElement('style');
@@ -27,10 +27,10 @@ function createElements() {
 function registerClickListener() {
 	const button = document.getElementById('eaf-root').shadowRoot.getElementById('eaf-button');
 	button.addEventListener('click', function() {
-		const message = { instruction: 'requestPermissions' };
+		const message = { instruction: 'requestPermission' };
 		chrome.runtime.sendMessage(message, response => {
 			const requestSuccessful = !chrome.runtime.lastError && response.success;
-			alert(`You have ${requestSuccessful ? 'successfully' : 'unsuccessfully'} requested permissions`);
+			alert(`You have ${requestSuccessful ? 'successfully' : 'unsuccessfully'} requested permission`);
 		});
 	});
 }
