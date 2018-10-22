@@ -1,2 +1,2 @@
-# easier-to-ask-forgiveness
-Chrome extension that prompts user for &lt;all_urls> permissions
+# easier-to-ask-for-forgiveness
+A chrome extension that, when interacted with, uses `chrome.permissions.request` to get `<all_urls>` permission.
