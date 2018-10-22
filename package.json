@@ -1,7 +1,7 @@
 {
-  "name": "easier-to-ask-for-forgiveness",
+  "name": "all-urls-permission-example",
   "version": "0.0.1",
-  "description": "A chrome extension that attempts to get additional permissions when clicked",
+  "description": "A chrome extension that attempts to get <all_urls> permission when clicked",
   "main": "src/content.js",
   "dependencies": {},
   "devDependencies": {},
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NaughtyMC/easier-to-ask-for-forgiveness.git"
+    "url": "git+https://github.com/NaughtyMC/all-urls-permission-example.git"
   },
   "author": "Will McNaughton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NaughtyMC/easier-to-ask-for-forgiveness/issues"
+    "url": "https://github.com/NaughtyMC/all-urls-permission-example/issues"
   },
-  "homepage": "https://github.com/NaughtyMC/easier-to-ask-for-forgiveness#readme"
+  "homepage": "https://github.com/NaughtyMC/all-urls-permission-example#readme"
 }
